@@ -1,9 +1,9 @@
 function getComputerChoice () {
-    let value = Math.random();
+    let value = Math.floor(Math.random() * 3) +1;
     // console.log(value);
 
-    if (value < 0.33) return 'rock';
-    else if(value < 0.66) return 'paper';
+    if (value === 1) return 'rock';
+    else if(value === 2) return 'paper';
     else return 'scissors';
 }
 
