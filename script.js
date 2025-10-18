@@ -52,3 +52,9 @@ let computerScore = 0;
 playGame();
 console.log("After 5 rounds, your score is " + humanScore + " and computer score is " +computerScore);
 
+if (humanScore > computerScore)
+    console.log("You win the game!");
+else if (computerScore > humanScore)
+    console.log("Computer wins the game!");
+else
+    console.log("It's a tie overall!");
