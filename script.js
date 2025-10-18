@@ -41,9 +41,8 @@ function playRound() {
 
 function playGame() {
     let time = 5;
-    while(time>0){
+    for (let i = 1; i <=time; i++) {
         playRound();
-        --time;
     }
 }
 
