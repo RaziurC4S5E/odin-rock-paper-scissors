@@ -12,8 +12,7 @@ function getHumanChoice() {
     return value.toLowerCase();
 }
 
-let humanScore = 0;
-let computerScore = 0;
+
 
 function playRound() {
     const humanSelection = getHumanChoice();
@@ -39,4 +38,18 @@ function playRound() {
         }
 
 }
+
+function playGame() {
+    let time = 5;
+    while(time>0){
+        playRound();
+        --time;
+    }
+}
+
+let humanScore = 0;
+let computerScore = 0;
+
+playGame();
+console.log("After 5 rounds, your score is " + humanScore + " and computer score is " +computerScore);
 
